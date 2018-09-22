@@ -2,13 +2,17 @@
 The purpose of this repository is to determine what's required to install x steps recorder
 
 To build:
+
   sudo docker build . -t xsr:test
   
 To run
+
   sudo docker run -ti --rm --privileged  --name xsr xsr:test
   
 To test, start the window manager
+
   sudo docker exec -ti xsr bash
+  
   startx -- :3
 
 TODO:
