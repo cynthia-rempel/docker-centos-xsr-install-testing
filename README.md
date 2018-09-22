@@ -15,6 +15,9 @@ To test, start the window manager
   
   startx -- :3
 
+Navigate to the window by:
+Ctrl + alt + f3
+
 TODO:
   still need to figure out how to launch xsr, now that I have a working window manager
 
