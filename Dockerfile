@@ -15,8 +15,10 @@ RUN rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7 && \
     yum install ImageMagick perl-HTML-Parser scrot xdotool xorg-x11-server-utils which -y && \
     wget https://github.com/nonnymoose/xsr/archive/master.zip && \
     unzip master.zip && \
+    mv xsr-master/xsr /usr/bin/ && \
     mv xsr-master /usr/share/xsr
-COPY 10-inputs.conf xinitrc fvwm.config ./
+
+COPY xinitrc fvwm.config ./
 # Install the testing environment
 RUN yum install fvwm \
   mesa-dri-drivers \
